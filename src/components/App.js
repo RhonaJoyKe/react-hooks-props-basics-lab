@@ -11,10 +11,13 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      
+      <About bio={user.bio} github={user.links.github} linkedin={user.links.linkedin} />
+      <Home name={user.name} city={user.city} color={user.color} />
+   
     </div>
   );
+    
 }
 
 export default App;
